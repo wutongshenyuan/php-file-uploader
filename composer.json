@@ -1,0 +1,16 @@
+{
+    "name": "wsw/php-file-uploader",
+    "description": "tp5抽取的上传类，供学习用",
+    "type": "library",
+    "license": "Apache-2.0",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpfileuploader\\": "src"
+        }
+    }
+
+}
