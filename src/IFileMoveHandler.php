@@ -5,7 +5,7 @@
  * Date: 2019/10/30
  * Time: 13:37
  */
-namespace phpfileuploader;
+namespace wutongshenyuan\phpfileuploader;
 interface IFileMoveHandler{
     public static function doMove($sourceFile,$destinationFile):bool ;
 }

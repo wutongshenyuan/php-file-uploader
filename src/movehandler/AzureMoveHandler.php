@@ -6,8 +6,8 @@
  * Time: 13:49
  */
 
-namespace phpfileuploader\movehandler;
-use phpfileuploader\IFileMoveHandler;
+namespace wutongshenyuan\phpfileuploader\movehandler;
+use wutongshenyuan\phpfileuploader\IFileMoveHandler;
 // 这个handler是上传到Azure
 class AzureMoveHandler implements IFileMoveHandler
 {

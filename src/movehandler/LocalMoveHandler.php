@@ -5,8 +5,8 @@
  * Date: 2019/10/30
  * Time: 13:44
  */
-namespace phpfileuploader\movehandler;
-use phpfileuploader\IFileMoveHandler;
+namespace wutongshenyuan\phpfileuploader\movehandler;
+use wutongshenyuan\phpfileuploader\IFileMoveHandler;
 
 class LocalMoveHandler implements IFileMoveHandler
 {

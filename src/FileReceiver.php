@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-namespace phpfileuploader;
+namespace wutongshenyuan\phpfileuploader;
 
 class FileReceiver
 {
