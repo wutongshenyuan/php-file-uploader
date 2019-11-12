@@ -6,6 +6,8 @@
 $files = FileReceiver::getInstance()->file();
 // 移动文件，默认使用move_uploaded_file移动文件，如果要使用自定义的移动类，请在移动前设置
 // File::setFileMoveHandler(类名);
+// 该handler可能需要一些配置 具体配置得看具体handler要求
+// AzureMoveHandler::setConfig([]);
 $desPath = 'uploads/';
 foreach($files as $one){
     // 此路径是可以存入数据库的路径

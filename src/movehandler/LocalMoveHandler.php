@@ -14,4 +14,8 @@ class LocalMoveHandler implements IFileMoveHandler
     {
          return move_uploaded_file($sourceFile,$destinationFile);
     }
+    public static function setConfig($config): bool
+    {
+        return true;
+    }
 }

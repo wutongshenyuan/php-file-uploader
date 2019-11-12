@@ -7,12 +7,28 @@
  */
 
 namespace wutongshenyuan\phpfileuploader\movehandler;
+use wslibs\storage\CunChuIO;
 use wutongshenyuan\phpfileuploader\IFileMoveHandler;
 // 这个handler是上传到Azure
 class AzureMoveHandler implements IFileMoveHandler
 {
-    public function doMove($sourceFile, $destinationFile):bool
+    public static function doMove($sourceFile, $destinationFile):bool
     {
-        return false;
+        return CunChuIO::uploadContent($destinationFile,file_get_contents($sourceFile));
     }
+    public static function setConfig($config): bool
+    {
+        /*
+         $config = [
+          'storename'=>'',
+          'rongqi'=>'',
+          'storage_list'=>'',
+          'accountname'=>'',
+          'accountkey'=>'',
+         ];
+         */
+        CunChuIO::setConfig($config);
+        return true;
+    }
+
 }

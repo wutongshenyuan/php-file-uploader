@@ -8,4 +8,5 @@
 namespace wutongshenyuan\phpfileuploader;
 interface IFileMoveHandler{
     public static function doMove($sourceFile,$destinationFile):bool ;
+    public static function setConfig($config):bool ;
 }
