@@ -14,7 +14,7 @@ class AzureMoveHandler implements IFileMoveHandler
 {
     public static function doMove($sourceFile, $destinationFile):bool
     {
-        return CunChuIO::uploadContent($destinationFile,file_get_contents($sourceFile));
+        return (bool)CunChuIO::uploadContent($destinationFile,file_get_contents($sourceFile));
     }
     public static function setConfig($config): bool
     {

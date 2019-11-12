@@ -343,7 +343,7 @@ class File extends SplFileObject
      * @param  string           $path    保存路径
      * @param  string|bool      $savename    保存的文件名 默认自动生成
      * @param  boolean          $replace 同名文件是否覆盖
-     * @return false|File       false-失败 否则返回File实例
+     * @return false|string       false-失败 否则返回File path
      */
     public function move($path, $savename = true, $replace = true)
     {
@@ -410,10 +410,10 @@ class File extends SplFileObject
 
 
         // 返回 File对象实例
-        $file = new self($filename);
-        $file->setSaveName($saveName);
-        $file->setUploadInfo($this->info);
-        return $file;
+//        $file = new self($filename);
+//        $file->setSaveName($saveName);
+//        $file->setUploadInfo($this->info);
+        return $saveName;
     }
 
     /**
