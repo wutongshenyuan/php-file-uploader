@@ -4,6 +4,7 @@
     "type": "library",
     "license": "Apache-2.0",
     "minimum-stability": "dev",
+
     "require": {
         "php": ">=7.0",
         "wslibs/cunchuio":">=0.0.1"
